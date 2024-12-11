@@ -1,0 +1,194 @@
+:root {
+    --fonte-principal: 'Roboto Slab', sans-serif;
+    --fonte-secundaria: 'Dai Banna SIL', sans-serif;
+    --cor-botao-login: #1A186B;
+}
+
+body {
+    background-color: var(--bs-gray-900);
+}
+
+.container {
+    background-color: var(--bs-yellow);
+    border-radius: 20px;
+    height: 100vh;
+    width: 50%;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 100%;
+}
+
+.keeta-titulo {
+    max-width: 78%;
+}
+
+.container-login-botao {
+    background-color: var(--bs-black);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 5px 5px var(--bs-gray-900);
+    align-items: center;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.container-login-botao-icone {
+    image-rendering: auto;
+}
+
+.container-login-botao-palavra {
+    background-color: var(--bs-black);
+    font-family: var(--fonte-principal);
+    color: var(--bs-white);
+    font-weight: bold;
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+    padding: 3px 0;
+}
+
+.text-start {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.container-login-esqueci-senha {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.container-login-login-botao {
+    background-color: var(--cor-botao-login);
+    border-radius: 10px;
+    box-shadow: 1px 7px 15px var(--bs-gray-900);
+    padding: 4px 60px;
+    color: var(--bs-white);
+    font-family: var(--fonte-secundaria);
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container-login-login-botao:hover {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.container-login-nao-possui-conta {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.container-login-cadastro-botao {
+    background-color: var(--cor-botao-login);
+    font-family: var(--fonte-secundaria);
+    color: var(--bs-white);
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 1px 3px 10px var(--bs-gray-900);
+}
+
+.container-login-cadastro-botao:hover {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.divisor-linha {
+    flex: 1;
+    border-top: 1px solid var(--bs-black);
+}
+
+.divisor-texto {
+    margin: 0 10px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: var(--bs-black);
+}
+
+.container-login-gmail-login {
+    text-align: center;
+}
+
+.container-login-gmail-login p {
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: var(--bs-black);
+}
+
+.container-login-gmail-login img {
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 15%;
+}
+
+@media(min-height: 1000px) {
+    .container {
+        min-width: 45%;
+        height: 80%;
+        padding: 22% 0;
+    }
+}
+
+@media(max-height: 600px) {
+    .container {
+        background-color: var(--bs-yellow);
+        border-radius: 20px;
+        min-height: 90%;
+        max-width: 90%;
+}
+}
+
+@media(max-width: 600px) {
+    .container {
+        background-color: var(--bs-yellow);
+        border-radius: 20px;
+        height: 100vh;
+        min-width: 85%;
+        padding: 10px;
+}
+
+    .container-login-botao-palavra{
+        font-size: 12px;
+    }
+
+    .container-login-opcoes-extra {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 601px) and (min-height: 600px) {
+    .container {
+        background-color: var(--bs-yellow);
+        border-radius: 20px;
+        height: 100vh;
+        max-width: 25%;
+}
+
+
+    .container-login-opcoes-extra {
+    display: flex;
+    justify-content: center;
+}
+}
